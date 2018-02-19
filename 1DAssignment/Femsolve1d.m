@@ -1,7 +1,7 @@
 clear
 close all
 
-N = [10, 20, 40, 80, 160, 320, 640];
+N = [10, 20, 40, 80, 160];
 nN = numel(N);
 snN = ceil(sqrt(nN));
 for q=1:nN
@@ -15,7 +15,8 @@ for q=1:nN
     AssembleVector;
     u = S\f;
     
-    subplot(snN,snN,q);
+    figure(q)
     plot(x,u,'-o');
+    set(gca,'FontSize',24)
     title(['n = ', num2str(n)])
 end
