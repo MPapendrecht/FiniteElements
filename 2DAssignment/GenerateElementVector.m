@@ -16,5 +16,5 @@ end
 
 
 for index1 = 1:topology
-		felem(index1) = abs(Delta)/24 * sum(Fxy(xc, yc));
+		felem(index1) = abs(Delta)/6 * Fxy(xc(index1), yc(index1));
 end

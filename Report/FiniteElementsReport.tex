@@ -1,0 +1,246 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{epstopdf}
+\usepackage{float}
+
+\usepackage{cleveref}
+\title{Finite Elements lab assignments}
+\author{Martijn Papendrecht: 4369971}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{1D Assignment}
+\subsection{Theory}
+Starting with the differential equation and boundary conditions
+\begin{equation}
+\begin{split}
+-D \frac{d^2u}{dx^2} + \lambda u = f(x), \\
+-D \frac{du}{dx}(0) = 0, -D \frac{du}{dx}(1)=0
+\end{split}
+\end{equation}
+we can derive the weak formulation. 
+\begin{equation} 
+\label{eq:WeakForm}
+\begin{split}
+\int_0^1 \left[ -D   \frac{d^2 u}{dx^2} + \lambda u \right] \phi dx &= \int_0^1 f(x) \phi dx \\
+\int_0^1  -D \left( \frac{d}{dx} \left( \frac{du}{dx} \phi \right) - \frac{d\phi}{dx} \frac{du}{dx} \right) + \lambda u \phi &= \int_0^1 f(x) \phi dx \\
+-D \int_0^1 \frac{d}{dx} \left( \frac{du}{dx} \phi \right) dx + \int_0^1 D \frac{d\phi}{dx}\frac{du}{dx} + \lambda u \phi dx &= \int_0^1 f(x) \phi dx \\
+\int_0^1 D \frac{d\phi}{dx} \frac{du}{dx} + \lambda u \phi dx &= \int_0^1 f(x) \phi dx
+\end{split}
+\end{equation}
+Here $\phi$ is the test function satisfying the smoothness requirements. 
+The boundary conditions are already contained in this weak formulation.
+
+We can derive the Galerkin formulation by substitution $\phi = \phi_i$ and $u \approx u^N = \sum_{j=1}^N c_j \phi_j$ in \cref{eq:WeakForm}.
+
+\begin{equation} 
+\begin{split}
+\int_0^1 D \frac{d\phi_i}{dx} \frac{d}{dx}\left( \sum_{j=1}^N c_j \phi_j \right) + \lambda \left( \sum_{j=1}^N c_j \phi_j \right) \phi_i dx &= \int_0^1 f(x) \phi_i dx \\
+\sum_{j=1}^N c_j \int_0^1 D \frac{d \phi_i}{dx} \frac{d \phi_j}{dx} + \lambda \phi_i \phi_j dx &= \int_0^1 f(x) \phi_i dx
+\end{split}
+\end{equation}
+
+And finally we can write in the form $S \vec{u} = \vec{f}$ where 
+
+\begin{align}
+S_{ij} &= \int_0^1 D \frac{d \phi_i}{dx} \frac{d \phi_j}{dx} + \lambda \phi_i \phi_j dx \\
+f_i &= \int_0^1 f(x) \phi_i dx
+\end{align}
+
+\subsection{Modelling}
+All figures are made using Matlab. 
+The code is available at Github \footnote{ \label{fn:url} \url{https://github.com/MPapendrecht/FiniteElements.git}}. 
+In these figures the elements aren't equally spaced as prescribed in the assignment. 
+Every element has an additional random offset of $\pm \frac{1}{2n}$. 
+This has been done to test the code without the assumption of equally spaced vertices.
+
+\def\scale{0.20}
+
+The figures below show the results for different number of vertices $n$. $\lambda = 1$ and $D = 1$ and the function $f(x)=1$
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot10".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot20".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot40".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot80".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot160".eps}
+\end{figure}
+
+The solution is as expected very close to the analytical solution, and clearly satisfies the boundary conditions. 
+
+The figures below show the results for different number of vertices $n$ as well. The same parameters are used, however the function $f(x)=sin(20x)$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot10".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot20".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot40".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot80".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot160".eps}
+\end{figure}
+
+The solution with $n=10$ shows the boundary conditions aren't satisfied properly because the amount of vertices is too small. 
+The other solutions satisfy the boundary conditions much better. 
+Increasing $n$ further doesn't seem to make the function improve much more, which can be seen in the figure below.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot1600".eps}
+\end{figure}
+
+\newpage
+\section{2D Assignment: Assignment 1}
+We start with the differential equation and boundary conditions
+\def\div{\vec{\nabla}}
+\begin{equation}
+\label{eq:diffEq}
+\begin{split}
+-\div \cdot \left( D \div u \right) + \lambda u &= F(x,y),\quad (x,y) \in \Omega \\
+F(x,y) &= \exp{ \left( \frac{(x-0.3)^2 + y^ 2}{0.1} \right) } \\
+\frac{\partial u}{\partial n} &= 0, \quad (x,y) \in \partial \Omega
+\end{split}
+\end{equation}
+where $\Omega$ is the L-shaped domain which is constructed by removing the left-upper quarter from the square of $(-1,1) \times (-1,1)$ and where $\partial \Omega$ is the boundary of $\Omega$. 
+
+First we will derive the Weak Formulation, again using $\phi$ as the test function which satisfies the smoothness requirements. 
+
+\begin{equation}
+\label{eq:WeakForm2}
+\begin{split}
+\int_\Omega \left[ -\div \cdot \left( D \div u \right) + \lambda u \right] \phi d\Omega &= \int_\Omega F(x,y) \phi d\Omega \\
+- \int_\Omega \div \cdot \left( D \div u \right) \phi d\Omega + \int_\Omega \lambda u \phi d\Omega &= \int_\Omega F(x,y) \phi d\Omega \\
+-\int_\Omega \div \cdot \left( \left( D \div u \right) \phi \right) - D \div u \cdot \div \phi d\Omega + \int_\Omega \lambda u \phi d\Omega &= \int_\Omega F(x,y) d\Omega \\
+-\int_{\partial \Omega} D \left( \div u \cdot \vec{n} \right) \phi d\Gamma + \int_\Omega D \div u \cdot \div \phi + \lambda u \phi d\Omega &= \int_\Omega F(x,y) \phi d\Omega \\
+\int_\Omega D \div u \cdot \div \phi + \lambda u \phi d\Omega &= \int_\Omega F(x,y) \phi d\Omega
+\end{split}
+\end{equation}
+In \cref{eq:WeakForm2} we have used the boundary conditions and therefore they are contained in \cref{eq:WeakForm2}.
+
+Next we can derive the Galerkin formulation by substituting $\phi = \phi_i$ and $u \approx u^N = \sum_{j=1}^N c_j \phi_j$ into \cref{eq:WeakForm2}.
+
+\begin{equation}
+\label{eq:Galerkin2}
+\begin{split}
+\int_\Omega D \div \left( \sum_{j=1}^N c_j \phi_j \right) \cdot \div \phi_i + \lambda \left( \sum_{j=1}^N c_j \phi_j \right) \phi_i d\Omega &= \int_\Omega F(x,y) \phi_i d\Omega \\
+\int_\Omega D \sum_{j=1}^N c_j \div \phi_j \cdot \div \phi_i = \lambda \sum_{j=1}^N c_j \phi_j \phi_i d\Omega &= \int_\Omega F(x,y) \phi_i d\Omega \\
+\sum_{j=1}^N c_j \int_\Omega D \div \phi_j \cdot \div \phi_i + \lambda \phi_j \phi_i d\Omega &= \int_\Omega F(x,y) \phi_i d\Omega
+\end{split}
+\end{equation}
+
+We can write this as a linear system of equations $S \vec{u} = \vec{f}$ where
+\begin{equation}
+\begin{split}
+S_{ij} &= \int_\Omega D \div \phi_j \cdot \div \phi_i + \lambda \phi_j \phi_i d\Omega \\
+f_i &= \int_\Omega F(x,y) \phi_i d\Omega
+\end{split}
+\end{equation}
+
+Using triangular elements $e_k$ we find for the internal elements 
+
+\begin{equation}
+\begin{split}
+S_{ij}^{e_k} &= \int_{e_k} D 
+\begin{bmatrix}
+\beta_j & \gamma_j
+\end{bmatrix} \cdot 
+\begin{bmatrix}
+\beta_i & \gamma_i
+\end{bmatrix} + \lambda \phi_j \phi_i d\Omega \\
+&= \frac{|\Delta e_k|}{2} D \left( \beta_i \beta_j + \gamma_i \gamma_j \right) + \frac{|\Delta e_k |}{24} \lambda \left( 1 + \delta_{ij} \right) \\
+f_i &= \int_{e_k} F(x,y) \phi_i d\Omega \\
+&= \frac{|\Delta e_k|}{6} \sum_{p=1}^3 F(x_p,y_p) \phi_i(x_p,y_p) \\
+&= \frac{|\Delta e_k|}{6} F(x_i,y_i).
+\end{split}
+\end{equation}
+
+Because \cref{eq:Galerkin2} doesn't have boundary contributions the boundary elements are all $0$.
+
+In the following figures $D=0.23$ and $\lambda$ is changed. All code is again available on Github (see \cref{fn:url}).
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot1".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot2".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot3".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot4".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot5".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot6".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot7".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot8".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot9".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width = \textwidth]{"./Pictures/contourPlot10".eps}
+\end{figure}
+
+In these figures we see a stationary solution to \cref{eq:diffEq}. 
+The diffusion of the source is balanced with the decomposition. 
+For high $lambda$ we see only the source remains and before much diffusion can happen the lactates are already decomposed. 
+When $\lambda$ is small, the lactates have to be in a higher concentration for the decomposition rate to catch up. 
+This is because the decomposition rate is linear with $u$. 
+Furthermore, because of the boundary conditions the lactates cannot leave the upper right corner, so here they reach a higher concentration. 
+In the lower left corner more space is available to decompose the lactates. 
+Here the concentration will always be lower than the upper right corner.
+This is also the reason for the fan shape in the lower right corner.
+Because the solution has to be smooth a fan transition between the high and low concentration areas is necessary.
+
+As a final remark $\lambda=0$ will result in a non-stationary solution, because of the lack of decomposition. The source will keep increasing the amount of lactates, and the diffusion will equalize the concentration, but there is not point at which decomposition will match regeneration. 
+
+
+\end{document}

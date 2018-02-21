@@ -1,4 +1,0 @@
-  File "<stdin>", line 3
-    print(x)
-        ^
-IndentationError: expected an indented block
