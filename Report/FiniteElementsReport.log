@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.9)  21 FEB 2018 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6350 64-bit) (preloaded format=pdflatex 2017.8.9)  21 FEB 2018 19:04
 entering extended mode
 **./FiniteElementsReport.tex
 (FiniteElementsReport.tex
@@ -601,6 +601,39 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks23
 \@floatcapt=\box29
 )
+(C:\Users\Martijn\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.sty
+\lst@mode=\count112
+\lst@gtempboxa=\box30
+\lst@token=\toks24
+\lst@length=\count113
+\lst@currlwidth=\dimen119
+\lst@column=\count114
+\lst@pos=\count115
+\lst@lostspace=\dimen120
+\lst@width=\dimen121
+\lst@newlines=\count116
+\lst@lineno=\count117
+\lst@maxwidth=\dimen122
+
+(C:\Users\Martijn\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count118
+\lst@skipnumbers=\count119
+\lst@framebox=\box31
+)
+(C:\Users\Martijn\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics\color.sty"
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\graphics-cfg\color.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
 (C:\Users\Martijn\AppData\Roaming\MiKTeX\2.9\tex\latex\cleveref\cleveref.sty
 Package: cleveref 2013/12/28 v0.19 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2230.
@@ -614,63 +647,65 @@ LaTeX Info: Redefining \cpagerefrange on input line 2230.
 LaTeX Info: Redefining \Cpagerefrange on input line 2230.
 LaTeX Info: Redefining \labelcref on input line 2230.
 LaTeX Info: Redefining \labelcpageref on input line 2230.
+Package cleveref Info: `listings' support loaded on input line 2950.
 )
 (FiniteElementsReport.aux)
 \openout1 = `FiniteElementsReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 15.
-LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
 
 (C:\Users\Martijn\AppData\Roaming\MiKTeX\2.9\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen119
-\scratchbox=\box30
-\nofMPsegments=\count113
-\nofMParguments=\count114
-\everyMPshowfont=\toks24
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen120
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
-\everyMPtoPDFconversion=\toks25
+\scratchcounter=\count120
+\scratchdimen=\dimen123
+\scratchbox=\box32
+\nofMPsegments=\count121
+\nofMParguments=\count122
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen124
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
+\everyMPtoPDFconversion=\toks26
 )
-\AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 15.
+\AtBeginShipoutBox=\box33
+Package hyperref Info: Link coloring OFF on input line 19.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
 ("C:\Program Files\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count118
+\c@section@level=\count126
 )
-LaTeX Info: Redefining \ref on input line 15.
-LaTeX Info: Redefining \pageref on input line 15.
-LaTeX Info: Redefining \nameref on input line 15.
+LaTeX Info: Redefining \ref on input line 19.
+LaTeX Info: Redefining \pageref on input line 19.
+LaTeX Info: Redefining \nameref on input line 19.
 
 (FiniteElementsReport.out) (FiniteElementsReport.out)
 \@outlinefile=\write3
 \openout3 = `FiniteElementsReport.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 17.
+\c@lstlisting=\count127
+LaTeX Font Info:    Try loading font information for U+msa on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 17.
+LaTeX Font Info:    Try loading font information for U+msb on input line 21.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -691,15 +726,15 @@ f>
 (epstopdf)                    size: 6952 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/linPlot10"-eps-
 converted-to.pdf "./Pictures/linPlot10".eps>
-(epstopdf)             \includegraphics on input line 70.
+(epstopdf)             \includegraphics on input line 74.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/linPlot10"-eps-converted-to.pdf, id=41, 1445.4pt x 723.70375pt>
+<"./Pictures/linPlot10"-eps-converted-to.pdf, id=156, 1445.4pt x 723.70375pt>
 File: "./Pictures/linPlot10"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/linPlot10"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/linPlot10"-eps-converted-to.pdf used on in
-put line 70.
+put line 74.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
 Package epstopdf Info: Source file: <"./Pictures/linPlot20".eps>
 (epstopdf)                    date: 2018-02-21 12:27:46
@@ -710,15 +745,15 @@ f>
 (epstopdf)                    size: 7880 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/linPlot20"-eps-
 converted-to.pdf "./Pictures/linPlot20".eps>
-(epstopdf)             \includegraphics on input line 74.
+(epstopdf)             \includegraphics on input line 78.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/linPlot20"-eps-converted-to.pdf, id=42, 1445.4pt x 723.70375pt>
+<"./Pictures/linPlot20"-eps-converted-to.pdf, id=157, 1445.4pt x 723.70375pt>
 File: "./Pictures/linPlot20"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/linPlot20"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/linPlot20"-eps-converted-to.pdf used on in
-put line 74.
+put line 78.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
  [3]
 Package epstopdf Info: Source file: <"./Pictures/linPlot40".eps>
@@ -730,15 +765,15 @@ f>
 (epstopdf)                    size: 9210 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/linPlot40"-eps-
 converted-to.pdf "./Pictures/linPlot40".eps>
-(epstopdf)             \includegraphics on input line 78.
+(epstopdf)             \includegraphics on input line 82.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/linPlot40"-eps-converted-to.pdf, id=60, 1445.4pt x 723.70375pt>
+<"./Pictures/linPlot40"-eps-converted-to.pdf, id=175, 1445.4pt x 723.70375pt>
 File: "./Pictures/linPlot40"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/linPlot40"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/linPlot40"-eps-converted-to.pdf used on in
-put line 78.
+put line 82.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
 Package epstopdf Info: Source file: <"./Pictures/linPlot80".eps>
 (epstopdf)                    date: 2018-02-21 12:27:46
@@ -749,15 +784,15 @@ f>
 (epstopdf)                    size: 12212 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/linPlot80"-eps-
 converted-to.pdf "./Pictures/linPlot80".eps>
-(epstopdf)             \includegraphics on input line 82.
+(epstopdf)             \includegraphics on input line 86.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/linPlot80"-eps-converted-to.pdf, id=61, 1445.4pt x 723.70375pt>
+<"./Pictures/linPlot80"-eps-converted-to.pdf, id=176, 1445.4pt x 723.70375pt>
 File: "./Pictures/linPlot80"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/linPlot80"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/linPlot80"-eps-converted-to.pdf used on in
-put line 82.
+put line 86.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
 Package epstopdf Info: Source file: <"./Pictures/linPlot160".eps>
 (epstopdf)                    date: 2018-02-21 12:27:46
@@ -768,15 +803,15 @@ df>
 (epstopdf)                    size: 17119 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/linPlot160"-eps
 -converted-to.pdf "./Pictures/linPlot160".eps>
-(epstopdf)             \includegraphics on input line 86.
+(epstopdf)             \includegraphics on input line 90.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/linPlot160"-eps-converted-to.pdf, id=62, 1445.4pt x 723.70375pt>
+<"./Pictures/linPlot160"-eps-converted-to.pdf, id=177, 1445.4pt x 723.70375pt>
 File: "./Pictures/linPlot160"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/linPlot160"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/linPlot160"-eps-converted-to.pdf used on i
-nput line 86.
+nput line 90.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
  [4 <./Pictures/linPlot10-eps-converted-to.pdf> <./Pictures/linPlot20-eps-conve
 rted-to.pdf> <./Pictures/linPlot40-eps-converted-to.pdf>]
@@ -789,15 +824,15 @@ f>
 (epstopdf)                    size: 6965 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/sinPlot10"-eps-
 converted-to.pdf "./Pictures/sinPlot10".eps>
-(epstopdf)             \includegraphics on input line 95.
+(epstopdf)             \includegraphics on input line 99.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/sinPlot10"-eps-converted-to.pdf, id=91, 1445.4pt x 723.70375pt>
+<"./Pictures/sinPlot10"-eps-converted-to.pdf, id=206, 1445.4pt x 723.70375pt>
 File: "./Pictures/sinPlot10"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/sinPlot10"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/sinPlot10"-eps-converted-to.pdf used on in
-put line 95.
+put line 99.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
 Package epstopdf Info: Source file: <"./Pictures/sinPlot20".eps>
 (epstopdf)                    date: 2018-02-21 12:27:46
@@ -808,15 +843,15 @@ f>
 (epstopdf)                    size: 7864 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/sinPlot20"-eps-
 converted-to.pdf "./Pictures/sinPlot20".eps>
-(epstopdf)             \includegraphics on input line 99.
+(epstopdf)             \includegraphics on input line 103.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/sinPlot20"-eps-converted-to.pdf, id=92, 1445.4pt x 723.70375pt>
+<"./Pictures/sinPlot20"-eps-converted-to.pdf, id=207, 1445.4pt x 723.70375pt>
 File: "./Pictures/sinPlot20"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/sinPlot20"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/sinPlot20"-eps-converted-to.pdf used on in
-put line 99.
+put line 103.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
 Package epstopdf Info: Source file: <"./Pictures/sinPlot40".eps>
 (epstopdf)                    date: 2018-02-21 12:27:46
@@ -827,15 +862,15 @@ f>
 (epstopdf)                    size: 9259 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/sinPlot40"-eps-
 converted-to.pdf "./Pictures/sinPlot40".eps>
-(epstopdf)             \includegraphics on input line 103.
+(epstopdf)             \includegraphics on input line 107.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/sinPlot40"-eps-converted-to.pdf, id=93, 1445.4pt x 723.70375pt>
+<"./Pictures/sinPlot40"-eps-converted-to.pdf, id=208, 1445.4pt x 723.70375pt>
 File: "./Pictures/sinPlot40"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/sinPlot40"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/sinPlot40"-eps-converted-to.pdf used on in
-put line 103.
+put line 107.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
  [5 <./Pictures/linPlot80-eps-converted-to.pdf> <./Pictures/linPlot160-eps-conv
 erted-to.pdf> <./Pictures/sinPlot10-eps-converted-to.pdf>]
@@ -848,15 +883,15 @@ f>
 (epstopdf)                    size: 12281 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/sinPlot80"-eps-
 converted-to.pdf "./Pictures/sinPlot80".eps>
-(epstopdf)             \includegraphics on input line 107.
+(epstopdf)             \includegraphics on input line 111.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/sinPlot80"-eps-converted-to.pdf, id=122, 1445.4pt x 723.70375pt>
+<"./Pictures/sinPlot80"-eps-converted-to.pdf, id=237, 1445.4pt x 723.70375pt>
 File: "./Pictures/sinPlot80"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/sinPlot80"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/sinPlot80"-eps-converted-to.pdf used on in
-put line 107.
+put line 111.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
 Package epstopdf Info: Source file: <"./Pictures/sinPlot160".eps>
 (epstopdf)                    date: 2018-02-21 12:27:46
@@ -867,15 +902,15 @@ df>
 (epstopdf)                    size: 17747 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/sinPlot160"-eps
 -converted-to.pdf "./Pictures/sinPlot160".eps>
-(epstopdf)             \includegraphics on input line 111.
+(epstopdf)             \includegraphics on input line 115.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/sinPlot160"-eps-converted-to.pdf, id=123, 1445.4pt x 723.70375pt>
+<"./Pictures/sinPlot160"-eps-converted-to.pdf, id=238, 1445.4pt x 723.70375pt>
 File: "./Pictures/sinPlot160"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/sinPlot160"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/sinPlot160"-eps-converted-to.pdf used on i
-nput line 111.
+nput line 115.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
  [6 <./Pictures/sinPlot20-eps-converted-to.pdf> <./Pictures/sinPlot40-eps-conve
 rted-to.pdf> <./Pictures/sinPlot80-eps-converted-to.pdf>]
@@ -888,14 +923,14 @@ pdf>
 (epstopdf)                    size: 111563 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/sinPlot1600"-ep
 s-converted-to.pdf "./Pictures/sinPlot1600".eps>
-(epstopdf)             \includegraphics on input line 119.
+(epstopdf)             \includegraphics on input line 123.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/sinPlot1600"-eps-converted-to.pdf, id=152, 1445.4pt x 723.70375pt>
+<"./Pictures/sinPlot1600"-eps-converted-to.pdf, id=267, 1445.4pt x 723.70375pt>
 File: "./Pictures/sinPlot1600"-eps-converted-to.pdf Graphic file (type pdf)
 <use "./Pictures/sinPlot1600"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/sinPlot1600"-eps-converted-to.pdf used on 
-input line 119.
+input line 123.
 (pdftex.def)             Requested size: 289.07487pt x 144.73817pt.
  [7 <./Pictures/sinPlot160-eps-converted-to.pdf> <./Pictures/sinPlot1600-eps-co
 nverted-to.pdf>] [8]
@@ -908,15 +943,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot1".eps>
 (epstopdf)                    size: 162665 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot1"-e
 ps-converted-to.pdf "./Pictures/contourPlot1".eps>
-(epstopdf)             \includegraphics on input line 193.
+(epstopdf)             \includegraphics on input line 199.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot1"-eps-converted-to.pdf, id=187, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot1"-eps-converted-to.pdf, id=302, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot1"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot1"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot1"-eps-converted-to.pdf used on
- input line 193.
+ input line 199.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
 Package epstopdf Info: Source file: <"./Pictures/contourPlot2".eps>
 (epstopdf)                    date: 2018-02-21 14:07:01
@@ -927,15 +962,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot2".eps>
 (epstopdf)                    size: 159656 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot2"-e
 ps-converted-to.pdf "./Pictures/contourPlot2".eps>
-(epstopdf)             \includegraphics on input line 197.
+(epstopdf)             \includegraphics on input line 203.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot2"-eps-converted-to.pdf, id=188, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot2"-eps-converted-to.pdf, id=303, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot2"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot2"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot2"-eps-converted-to.pdf used on
- input line 197.
+ input line 203.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
 Package epstopdf Info: Source file: <"./Pictures/contourPlot3".eps>
 (epstopdf)                    date: 2018-02-21 14:07:14
@@ -946,15 +981,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot3".eps>
 (epstopdf)                    size: 158997 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot3"-e
 ps-converted-to.pdf "./Pictures/contourPlot3".eps>
-(epstopdf)             \includegraphics on input line 201.
+(epstopdf)             \includegraphics on input line 207.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot3"-eps-converted-to.pdf, id=189, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot3"-eps-converted-to.pdf, id=304, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot3"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot3"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot3"-eps-converted-to.pdf used on
- input line 201.
+ input line 207.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
  [9 <./Pictures/contourPlot1-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <"./Pictures/contourPlot4".eps>
@@ -966,15 +1001,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot4".eps>
 (epstopdf)                    size: 156614 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot4"-e
 ps-converted-to.pdf "./Pictures/contourPlot4".eps>
-(epstopdf)             \includegraphics on input line 205.
+(epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot4"-eps-converted-to.pdf, id=202, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot4"-eps-converted-to.pdf, id=317, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot4"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot4"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot4"-eps-converted-to.pdf used on
- input line 205.
+ input line 211.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
 Package epstopdf Info: Source file: <"./Pictures/contourPlot5".eps>
 (epstopdf)                    date: 2018-02-21 14:07:45
@@ -985,15 +1020,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot5".eps>
 (epstopdf)                    size: 157692 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot5"-e
 ps-converted-to.pdf "./Pictures/contourPlot5".eps>
-(epstopdf)             \includegraphics on input line 209.
+(epstopdf)             \includegraphics on input line 215.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot5"-eps-converted-to.pdf, id=203, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot5"-eps-converted-to.pdf, id=318, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot5"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot5"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot5"-eps-converted-to.pdf used on
- input line 209.
+ input line 215.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
 Package epstopdf Info: Source file: <"./Pictures/contourPlot6".eps>
 (epstopdf)                    date: 2018-02-21 14:08:06
@@ -1004,15 +1039,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot6".eps>
 (epstopdf)                    size: 150975 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot6"-e
 ps-converted-to.pdf "./Pictures/contourPlot6".eps>
-(epstopdf)             \includegraphics on input line 213.
+(epstopdf)             \includegraphics on input line 219.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot6"-eps-converted-to.pdf, id=204, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot6"-eps-converted-to.pdf, id=319, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot6"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot6"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot6"-eps-converted-to.pdf used on
- input line 213.
+ input line 219.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
  [10 <./Pictures/contourPlot2-eps-converted-to.pdf> <./Pictures/contourPlot3-ep
 s-converted-to.pdf> <./Pictures/contourPlot4-eps-converted-to.pdf>]
@@ -1025,15 +1060,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot7".eps>
 (epstopdf)                    size: 138196 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot7"-e
 ps-converted-to.pdf "./Pictures/contourPlot7".eps>
-(epstopdf)             \includegraphics on input line 217.
+(epstopdf)             \includegraphics on input line 223.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot7"-eps-converted-to.pdf, id=227, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot7"-eps-converted-to.pdf, id=342, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot7"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot7"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot7"-eps-converted-to.pdf used on
- input line 217.
+ input line 223.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
 Package epstopdf Info: Source file: <"./Pictures/contourPlot8".eps>
 (epstopdf)                    date: 2018-02-21 14:08:38
@@ -1044,15 +1079,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot8".eps>
 (epstopdf)                    size: 134590 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot8"-e
 ps-converted-to.pdf "./Pictures/contourPlot8".eps>
-(epstopdf)             \includegraphics on input line 221.
+(epstopdf)             \includegraphics on input line 227.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot8"-eps-converted-to.pdf, id=228, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot8"-eps-converted-to.pdf, id=343, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot8"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot8"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot8"-eps-converted-to.pdf used on
- input line 221.
+ input line 227.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
 Package epstopdf Info: Source file: <"./Pictures/contourPlot9".eps>
 (epstopdf)                    date: 2018-02-21 14:08:53
@@ -1063,15 +1098,15 @@ Package epstopdf Info: Source file: <"./Pictures/contourPlot9".eps>
 (epstopdf)                    size: 135813 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot9"-e
 ps-converted-to.pdf "./Pictures/contourPlot9".eps>
-(epstopdf)             \includegraphics on input line 225.
+(epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot9"-eps-converted-to.pdf, id=229, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot9"-eps-converted-to.pdf, id=344, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot9"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot9"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot9"-eps-converted-to.pdf used on
- input line 225.
+ input line 231.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
  [11 <./Pictures/contourPlot5-eps-converted-to.pdf> <./Pictures/contourPlot6-ep
 s-converted-to.pdf> <./Pictures/contourPlot7-eps-converted-to.pdf>]
@@ -1084,36 +1119,61 @@ o.pdf>
 (epstopdf)                    size: 136822 bytes
 (epstopdf)             Command: <epstopdf --outfile="./Pictures/contourPlot10"-
 eps-converted-to.pdf "./Pictures/contourPlot10".eps>
-(epstopdf)             \includegraphics on input line 229.
+(epstopdf)             \includegraphics on input line 235.
 Package epstopdf Info: Output file is already uptodate.
 
-<"./Pictures/contourPlot10"-eps-converted-to.pdf, id=252, 1445.4pt x 754.82pt>
+<"./Pictures/contourPlot10"-eps-converted-to.pdf, id=367, 1445.4pt x 754.82pt>
 File: "./Pictures/contourPlot10"-eps-converted-to.pdf Graphic file (type pdf)
 
 <use "./Pictures/contourPlot10"-eps-converted-to.pdf>
 Package pdftex.def Info: "./Pictures/contourPlot10"-eps-converted-to.pdf used o
-n input line 229.
+n input line 235.
 (pdftex.def)             Requested size: 345.0pt x 180.15846pt.
  [12 <./Pictures/contourPlot8-eps-converted-to.pdf> <./Pictures/contourPlot9-ep
-s-converted-to.pdf> <./Pictures/contourPlot10-eps-converted-to.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 246.
- [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 246.
+s-converted-to.pdf> <./Pictures/contourPlot10-eps-converted-to.pdf>] [13]
+(C:\Users\Martijn\AppData\Roaming\MiKTeX\2.9\tex\latex\listings\lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on i
+nput line 274.
+
+(Functions/1D/GenerateMesh.m
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 2.
+
+("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 2.
+)
+(Functions/1D/GenerateTopology.m) (Functions/1D/GenerateElementMatrix.m)
+(Functions/1D/GenerateElementVector.m) (Functions/1D/AssembleMatrix.m)
+(Functions/1D/AssembleVector.m [14]) (Functions/1D/func.m)
+(Functions/1D/Femsolve1d.m) [15] (Functions/2D/WI4243Mesh.m)
+(Functions/2D/WI4243Comp.m) (Functions/2D/GenerateElementMatrix.m [16])
+(Functions/2D/GenerateElementVector.m [17])
+(Functions/2D/GenerateBoundaryElementMatrix.m)
+(Functions/2D/GenerateBoundaryElementVector.m)
+(Functions/2D/BuildMatricesandVectors.m [18]) [19] (Functions/2D/Fxy.m)
+(Functions/2D/WI4243Post.m) (Functions/2D/Run.m)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 332.
+ [20]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 332.
  (FiniteElementsReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 246.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 246.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 332.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 332.
 Package rerunfilecheck Info: File `FiniteElementsReport.out' has not changed.
-(rerunfilecheck)             Checksum: 749A246870C8C30D9623A60234D5360B;227.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 246.
+(rerunfilecheck)             Checksum: 663CDDA03EF8875BB34EA87AFF1EB0CA;1921.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 332.
  ) 
 Here is how much of TeX's memory you used:
- 8335 strings out of 493323
- 131533 string characters out of 3139061
- 249953 words of memory out of 3000000
- 11726 multiletter control sequences out of 15000+200000
+ 11167 strings out of 493323
+ 169146 string characters out of 3139061
+ 365177 words of memory out of 3000000
+ 14172 multiletter control sequences out of 15000+200000
  11671 words of font info for 46 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 29i,20n,28p,318b,359s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 29i,20n,40p,318b,1852s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Pr
 ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program Fi
 les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Program Files/MiKT
@@ -1122,13 +1182,14 @@ onts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Program Files/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmmi7.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/
 amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr17.
-pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program File
-s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on FiniteElementsReport.pdf (13 pages, 1834975 bytes).
+pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr5.pfb><C:/Pr
+ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program File
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Program Files/MiKTeX 2
+.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts
+/type1/public/amsfonts/cm/cmtt8.pfb>
+Output written on FiniteElementsReport.pdf (20 pages, 1923262 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 30 named destinations out of 1000 (max. 500000)
- 138 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 817 PDF objects out of 1000 (max. 8388607)
+ 336 named destinations out of 1000 (max. 500000)
+ 322 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -8,6 +8,10 @@
 \usepackage{hyperref}
 \usepackage{epstopdf}
 \usepackage{float}
+\usepackage{listings}
+\usepackage{color} %red, green, blue, yellow, cyan, magenta, black, white
+\definecolor{mygreen}{RGB}{28,172,0} % color values Red, Green, Blue
+\definecolor{mylilas}{RGB}{170,55,241}
 
 \usepackage{cleveref}
 \title{Finite Elements lab assignments}
@@ -121,6 +125,7 @@ Increasing $n$ further doesn't seem to make the function improve much more, whic
 
 \newpage
 \section{2D Assignment: Assignment 1}
+\subsection{Theory}
 We start with the differential equation and boundary conditions
 \def\div{\vec{\nabla}}
 \begin{equation}
@@ -186,6 +191,7 @@ f_i &= \int_{e_k} F(x,y) \phi_i d\Omega \\
 
 Because \cref{eq:Galerkin2} doesn't have boundary contributions the boundary elements are all $0$.
 
+\subsection{Modelling}
 In the following figures $D=0.23$ and $\lambda$ is changed. All code is again available on Github (see \cref{fn:url}).
 
 \begin{figure}[H]
@@ -241,6 +247,86 @@ This is also the reason for the fan shape in the lower right corner.
 Because the solution has to be smooth a fan transition between the high and low concentration areas is necessary.
 
 As a final remark $\lambda=0$ will result in a non-stationary solution, because of the lack of decomposition. The source will keep increasing the amount of lactates, and the diffusion will equalize the concentration, but there is not point at which decomposition will match regeneration. 
+
+\newpage
+\section{Matlab Code}
+\lstset{language=Matlab,%
+    %basicstyle=\color{red},
+    breaklines=true,%
+    morekeywords={matlab2tikz},
+    keywordstyle=\color{blue},%
+    morekeywords=[2]{1}, keywordstyle=[2]{\color{black}},
+    identifierstyle=\color{black},%
+    stringstyle=\color{mylilas},
+    commentstyle=\color{mygreen},%
+    showstringspaces=false,%without this there will be a symbol in the places where there is a space
+    numbers=left,%
+    numberstyle={\tiny \color{black}},% size of the numbers
+    numbersep=9pt, % this defines how far the numbers are from the text
+    emph=[1]{for,end,break},emphstyle=[1]\color{red}, %some words to emphasise
+    %emph=[2]{word1,word2}, emphstyle=[2]{style},    
+}
+
+\subsection{1D Assignment}
+\lstset{inputpath=./Functions/1D}
+
+\subsubsection{GenerateMesh.m}
+\lstinputlisting{GenerateMesh.m}
+
+\subsubsection{GenerateTopology.m}
+\lstinputlisting{GenerateTopology.m}
+
+\subsubsection{GenerateElementMatrix.m}
+\lstinputlisting{GenerateElementMatrix.m}
+
+\subsubsection{GenerateElementVector.m}
+\lstinputlisting{GenerateElementVector.m}
+
+\subsubsection{AssembleMatrix.m}
+\lstinputlisting{AssembleMatrix.m}
+
+\subsubsection{AssembleVector.m}
+\lstinputlisting{AssembleVector.m}
+
+\subsubsection{func.m}
+\lstinputlisting{func.m}
+
+\subsubsection{Femsolve1d.m}
+\lstinputlisting{Femsolve1d.m}
+
+\newpage
+\subsection{2D Assignment}
+\lstset{inputpath=./Functions/2D}
+
+\subsubsection{WI4243Mesh.m}
+\lstinputlisting{WI4243Mesh.m}
+
+\subsubsection{WI4243Comp.m}
+\lstinputlisting{WI4243Comp.m}
+
+\subsubsection{GenerateElementMatrix.m}
+\lstinputlisting{GenerateElementMatrix.m}
+
+\subsubsection{GenerateElementVector.m}
+\lstinputlisting{GenerateElementVector.m}
+
+\subsubsection{GenerateBoundaryElementMatrix.m}
+\lstinputlisting{GenerateBoundaryElementMatrix.m}
+
+\subsubsection{GenerateBoundaryElementVector.m}
+\lstinputlisting{GenerateBoundaryElementVector.m}
+
+\subsubsection{BuildMatricesandVectors.m}
+\lstinputlisting{BuildMatricesandVectors.m}
+
+\subsubsection{Fxy.m}
+\lstinputlisting{Fxy.m}
+
+\subsubsection{WI4243Post.m}
+\lstinputlisting{WI4243Post.m}
+
+\subsubsection{Run.m}
+\lstinputlisting{Run.m}
 
 
 \end{document}
