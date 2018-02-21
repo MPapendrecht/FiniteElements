@@ -1,0 +1,128 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{epstopdf}
+\usepackage{float}
+\usepackage{python}
+\usepackage{subcaption}
+
+\usepackage{cleveref}
+\title{Finite Elements lab assignments}
+\author{Martijn Papendrecht: 4369971}
+\begin{document}
+\maketitle
+\newpage
+\tableofcontents
+\newpage
+\section{1D Assignment}
+\subsection{Theory}
+Starting with the differential equation and boundary conditions
+\begin{equation}
+\begin{split}
+-D \frac{d^2u}{dx^2} + \lambda u = f(x), \\
+-D \frac{du}{dx}(0) = 0, -D \frac{du}{dx}(1)=0
+\end{split}
+\end{equation}
+we can derive the weak formulation. 
+\begin{equation} 
+\label{eq:WeakForm}
+\begin{split}
+\int_0^1 \left[ -D   \frac{d^2 u}{dx^2} + \lambda u \right] \phi dx &= \int_0^1 f(x) \phi dx \\
+\int_0^1  -D \left( \frac{d}{dx} \left( \frac{du}{dx} \phi \right) - \frac{d\phi}{dx} \frac{du}{dx} \right) + \lambda u \phi &= \int_0^1 f(x) \phi dx \\
+-D \int_0^1 \frac{d}{dx} \left( \frac{du}{dx} \phi \right) dx + \int_0^1 D \frac{d\phi}{dx}\frac{du}{dx} + \lambda u \phi dx &= \int_0^1 f(x) \phi dx \\
+\int_0^1 D \frac{d\phi}{dx} \frac{du}{dx} + \lambda u \phi dx &= \int_0^1 f(x) \phi dx
+\end{split}
+\end{equation}
+Here $\phi$ is the test function satisfying the smoothness requirements. 
+The boundary conditions are already containted in this weak formulation.
+
+We can derive the Galerkin formulation by substitution $\phi = \phi_i$ and $u \approx u^N = \sum_{j=1}^N c_j \phi_j$ in \cref{eq:WeakForm}.
+
+\begin{equation} 
+\begin{split}
+\int_0^1 D \frac{d\phi_i}{dx} \frac{d}{dx}\left( \sum_{j=1}^N c_j \phi_j \right) + \lambda \left( \sum_{j=1}^N c_j \phi_j \right) \phi_i dx &= \int_0^1 f(x) \phi_i dx \\
+\sum_{j=1}^N c_j \int_0^1 D \frac{d \phi_i}{dx} \frac{d \phi_j}{dx} + \lambda \phi_i \phi_j dx &= \int_0^1 f(x) \phi_i dx
+\end{split}
+\end{equation}
+
+And finally we can write in the form $S \vec{u} = \vec{f}$ where 
+
+\begin{align}
+S_{ij} &= \int_0^1 D \frac{d \phi_i}{dx} \frac{d \phi_j}{dx} + \lambda \phi_i \phi_j dx \\
+f_i &= \int_0^1 f(x) \phi_i dx
+\end{align}
+
+\subsection{Modelling}
+All figures are made using Matlab. 
+The code is available at Github \footnote{ \url{https://github.com/MPapendrecht/FiniteElements.git}}. 
+In these figures the elements aren't equally spaced as prescribed in the assignment. 
+Every element has an additional random offset of $\pm \frac{1}{2n}$. 
+This has been done to test the code without the assumption of equally spaced vertices.
+
+\def\scale{0.20}
+
+The figures below show the results for different number of vertices $n$. $\lambda = 1$ and $D = 1$ and the function $f(x)=1$
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot10".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot20".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot40".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot80".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/linPlot160".eps}
+\end{figure}
+
+The solution is as expected very close to the analytical solution, and clearly satisfies the boundary conditions. 
+
+The figures below show the results for different number of vertices $n$ as well. The same parameters are used, however the function $f(x)=sin(20x)$.
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot10".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot20".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot40".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot80".eps}
+\end{figure}
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot160".eps}
+\end{figure}
+
+The solution with $n=10$ shows the boundary conditions aren't satisfied properly because the amount of vertices is too small. 
+The other solutions satisfy the boundary conditions much better. 
+Increasing $n$ further doesn't seem to make the function improve much more, which can be seen in the figure below.
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=\scale]{"./Pictures/sinPlot1600".eps}
+\end{figure}
+
+\newpage
+\section{2D Assignments}
+\subsection{Assignment 1}
+
+\end{document}
