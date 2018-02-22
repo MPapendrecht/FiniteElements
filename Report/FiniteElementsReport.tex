@@ -62,13 +62,14 @@ f_i &= \int_0^1 f(x) \phi_i dx
 \subsection{Modelling}
 All figures are made using Matlab. 
 The code is available at Github \footnote{ \label{fn:url} \url{https://github.com/MPapendrecht/FiniteElements.git}}. 
-In these figures the elements aren't equally spaced as prescribed in the assignment. 
-Every element has an additional random offset of $\pm \frac{1}{2n}$. 
+Also the files are added in section 3.
+In the files the elements have the option to get an additional random offset of $\pm \frac{1}{2n}$, and not equally spaced as prescribed in the assignment. 
 This has been done to test the code without the assumption of equally spaced vertices.
+The figures are made without the additional random offset.
 
 \def\scale{0.20}
 
-The figures below show the results for different number of vertices $n$. $\lambda = 1$ and $D = 1$ and the function $f(x)=1$
+The figures below show the results for different number of vertices $n$. Furthermore $\lambda = 1$ and $D = 1$ and the function $f(x)=1$.
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=\scale]{"./Pictures/linPlot10".eps}
@@ -192,7 +193,7 @@ f_i &= \int_{e_k} F(x,y) \phi_i d\Omega \\
 Because \cref{eq:Galerkin2} doesn't have boundary contributions the boundary elements are all $0$.
 
 \subsection{Modelling}
-In the following figures $D=0.23$ and $\lambda$ is changed. All code is again available on Github (see \cref{fn:url}).
+In the following figures $D=0.23$ and $\lambda$ is changed. All code is again available on Github (see \cref{fn:url}) as well in section 3.
 
 \begin{figure}[H]
 	\centering
